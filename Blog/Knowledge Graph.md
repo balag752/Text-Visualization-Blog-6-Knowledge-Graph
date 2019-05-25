@@ -1,7 +1,10 @@
 # Knowledge acquestion from Hotel reviews
 
+Date: **28.05. (Due: 27.05.)**
 
 Name: **Balaji Subramani**
+
+Session: **[Knowledge Graph](https://textvis.repke.eu/index.html)**
 
 Code: on **[GitHub](https://github.com/balag752/Text-Visualization-Blog-6-Knowledge-Graph)**
 
@@ -43,8 +46,6 @@ We have used gephi tool for knowledge graph visualization. Node and Edge data se
 
  ![Whole graph](Initial.png)
 
-
-
 Above image is shows the whole knowledge set in graph. Here Blue nodes are acting the as a Domain and edge is acting as the relationship between 2 nodes.
 
 There are lot of inter connection of nodes in center of the graph. So we wiill apply kcore filter to view it in better way.
@@ -56,8 +57,6 @@ Still center part is convoluted. But we will see in different graph. now focus o
 Now move into the inner core of the graph (k=3). Here we applied Between centrality with node size.  Here the **Best** word is acting as major node. It also have strong relationship with *amaze*.
 
 ![Whole graph](k_core_3_Between.png)
-
-
 
 Also, funny part here is place and reivew is realted with ignore. Also, **great** is related with **busy**.
 
