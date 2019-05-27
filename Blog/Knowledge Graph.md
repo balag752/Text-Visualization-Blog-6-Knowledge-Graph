@@ -6,7 +6,7 @@ Name: **Balaji Subramani**
 
 Session: **[Knowledge Graph](https://textvis.repke.eu/index.html)**
 
-Code: on **[GitHub](https://github.com/balag752/Text-Visualization-Blog-6-Knowledge-Graph)**
+Code: on **[GitLab](https://gitlab.hpi.de/fg-naumann/teaching/tvip19/tree/master/assignments/07_knowledgegraphs/basu)**
 
 ## Objective
 
@@ -44,19 +44,19 @@ All edges are considered as an indirect edge in our analysis.
 
 We have used the gephi tool for knowledge graph visualization. Node and Edge data sets are given as the input for text visualization.
 
- ![Whole graph](Initial.png)
+![Initial](uploads/b6e423729f7608bae395bd5a8315dfa2/Initial.png)
 
 The above image shows the whole knowledge set in a graph. Here Blue nodes are acting the as a Domain and edges are acting as the relationship between nodes.
 
 There is a lot of interconnection of nodes in the center of the graph. So we will apply the k-core filter for a better view.
 
- ![Whole graph](k_core_2.png)
+![k_core_2](uploads/94745251ad03f30b849392fad393ec26/k_core_2.png)
 
 Still, the center part is convoluted. But we will focus that part in a different graph. now focus on the outside of the graph. Here Top left, we could see a lot of relationship with **exceed** word. Also, **amaze** word is connected with *Family*, *First*, *still* and *food*.
 
 Now move into the inner core of the graph (k=3). Also here, we applied Between centrality with node size. Here the **Best** word is acting as a major node. It also has a strong relationship with *amaze*.
 
-![Whole graph](k_core_3_Between.png)
+![k_core_3_Between](uploads/ac62d879bb8258e2fd9c0f7748b770cc/k_core_3_Between.png)
 
 Also, the funny part here is place and review is related to ignoring. Also, **great** is related with **busy**.
 
