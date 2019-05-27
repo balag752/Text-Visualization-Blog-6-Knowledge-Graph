@@ -1,4 +1,4 @@
-# Knowledge acquestion from Hotel reviews
+# Knowledge acquisition from Hotel reviews
 
 Date: **28.05. (Due: 27.05.)**
 
@@ -14,15 +14,15 @@ This blog is focused to visualize the Knowledge Graph features. Here also, we ex
 
 ## Data Filter
 
-Due to the huge size of the volume, we have restricted and filtered low rated (<2) & high rated (4.8) reviews, for knowledge graph. Even from available data, we have only extracted review title instead of review content. So that we are able to gain the main intution of review with minimal data.
+Due to the huge size of the volume, we have restricted and filtered low rated (<2) & high rated (4.8) reviews, for knowledge graph. Even from available data, we have only extracted review title instead of review content. So that we are able to gain the main intuition of review with minimal data.
 
 ## Knowledge Graph Data Set
 
-We have splitted topics to cleansed tokens. Then created combination of words with triphlets. After that, finding the nouns and verb for each word in triphlets. Finally forming the triphlets which is having 2 nouns and one verb. Finally, stemmed the noun and verb. Unfortunately, stemming is not did a good work. So some words are converted properly. But sill understandable.
+We have split topics to cleansed tokens. Then created a combination of words with triplets. After that, finding the nouns and verb for each word in triplets. Finally forming the triplets which are having 2 nouns and one verb. Finally, stemmed the noun and the verb. Unfortunately, stemming is not did a good job. So some words are not converted properly. But sill understandable.
 
 #### Node :
 
-From the overall reviews topics, we are extracting all the nouns for nodes. Nodes data set is having below attributes
+From the overall reviews topics, we are extracting all the nouns for nodes. The nodes data set is having below attributes
 
 - ID - word
 
@@ -30,7 +30,7 @@ From the overall reviews topics, we are extracting all the nouns for nodes. Node
 
 #### Edges :
 
-Edges are designed based on triphlets. Edge source & target nodes are select from noun and edges are considering here as a verb.
+Edges are designed based on triplets. Edge source & target nodes are select from noun and edges are considering here as a verb.
 
 - Source - Noun 
 
@@ -38,28 +38,28 @@ Edges are designed based on triphlets. Edge source & target nodes are select fro
 
 - Edge - Verb
 
-All edges are considered as a indirect edge in our analysis.
+All edges are considered as an indirect edge in our analysis.
 
 # Knowledge Graph
 
-We have used gephi tool for knowledge graph visualization. Node and Edge data sets are given as the input for text visulization.
+We have used the gephi tool for knowledge graph visualization. Node and Edge data sets are given as the input for text visualization.
 
  ![Whole graph](Initial.png)
 
-Above image is shows the whole knowledge set in graph. Here Blue nodes are acting the as a Domain and edge is acting as the relationship between 2 nodes.
+The above image shows the whole knowledge set in a graph. Here Blue nodes are acting the as a Domain and edges are acting as the relationship between nodes.
 
-There are lot of inter connection of nodes in center of the graph. So we wiill apply kcore filter to view it in better way.
+There is a lot of interconnection of nodes in the center of the graph. So we will apply the k-core filter for a better view.
 
  ![Whole graph](k_core_2.png)
 
-Still center part is convoluted. But we will see in different graph. now focus on the outside of the graph. Here Top left, we could see lot of relationship with **exceed** word. Also **amaze** word is connected with *Family*, *First* as well as *still* and *food*.
+Still, the center part is convoluted. But we will focus that part in a different graph. now focus on the outside of the graph. Here Top left, we could see a lot of relationship with **exceed** word. Also, **amaze** word is connected with *Family*, *First*, *still* and *food*.
 
-Now move into the inner core of the graph (k=3). Here we applied Between centrality with node size.  Here the **Best** word is acting as major node. It also have strong relationship with *amaze*.
+Now move into the inner core of the graph (k=3). Also here, we applied Between centrality with node size. Here the **Best** word is acting as a major node. It also has a strong relationship with *amaze*.
 
 ![Whole graph](k_core_3_Between.png)
 
-Also, funny part here is place and reivew is realted with ignore. Also, **great** is related with **busy**.
+Also, the funny part here is place and review is related to ignoring. Also, **great** is related with **busy**.
 
 ### Conclusion
 
- In our above analysis, we could not get much inference as we dont have proper relationship words. Stil we find the major connection with available relationship word.
+ In our above analysis, we could not get much inference as we don't have proper relationship words. Still, we find the major connection and information with available data.
